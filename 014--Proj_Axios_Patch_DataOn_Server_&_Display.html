@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title> Doc </title>
+
+    <!--     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ -->
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+        <!-- This above link taken from https://cdnjs.com/libraries/axios 
+        Therefore, now we are able to access axios or by this link axios.min.js file is 
+        downloaded or combine with our files now -->
+
+</head>
+
+<body>
+    <header style="text-align: center;" id="main-header" class="heading-leader">
+        <h1> Booking Appointment App </h1>
+    </header><br>
+    <div class=".container">
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <form action="#" id="formation" onsubmit="storingDataOnCrudByAxios(event)">
+                        <div>
+                            <label for="usn"> User Name :- </label>
+                            <input type="text" name="username" id="usn" class="form-control" required>
+                        </div>
+                        <div>
+                            <label for="em"> Email Address :- </label>
+                            <input type="email" name="mailing" id="em" class="form-control" required>
+                        </div>
+                        <div>
+                            <label for="pn"> Phone Number :- </label>
+                            <input type="number" name="mobile" id="pn" class="form-control" required>
+                        </div><br>
+                        <div>
+                            <button class="btn btn-dark form-control">Submit</button>
+                        </div>
+                    </form>
+                    <div>
+                        <ul id="helloWorld"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="014--Proj_Axios_Patch_DataOn_Server_&_Display.js"></script>
+</body>
+
+</html>
